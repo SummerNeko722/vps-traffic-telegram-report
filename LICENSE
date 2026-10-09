@@ -19,3 +19,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+# 三、几点提醒
+
+1. **仓库里不要放 Token**，脚本里也不要硬编码。让使用者命令行传入。
+2. 建议在仓库加个 `LICENSE`，MIT 就行。
+3. README 里第一行放一个**效果预览截图**会让项目更友好，你之前发的那张 Telegram 截图就很适合。
+4. 如果将来加功能（比如流量告警、账单日重置），README 里的"一键安装"命令保持不变，用户重跑一遍即可。
+5. GitHub raw 在国内偶尔抽风，可以顺手把脚本也传到 Cloudflare R2 或 Gitee 作为备用源。
