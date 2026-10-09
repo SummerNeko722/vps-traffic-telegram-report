@@ -66,12 +66,12 @@ https://api.telegram.org/bot<TOKEN>/getUpdates
 二、一键安装
 SSH 登录你的 VPS，用 root 执行：
 
-bash
-curl -fsSL https://raw.githubusercontent.com/你的用户名/vps-traffic-report/main/vps-traffic-install.sh \
+curl -fsSL https://raw.githubusercontent.com/SummerNeko722/vps-traffic-telegram-report/main/vps-traffic-install.sh \
   | bash -s -- \
-    --token '你的BOT_TOKEN' \
-    --chat-id '你的CHAT_ID' \
-    --name 'HK-VPS-1'
+    --token '<你的BOT_TOKEN>' \
+    --chat-id '<你的CHAT_ID>' \
+    --name '<你的VPS名字>'
+
 参数说明
 参数	必填	说明
 --token	✅	Telegram Bot Token
