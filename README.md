@@ -63,6 +63,28 @@ https://api.telegram.org/bot<TOKEN>/getUpdates
 
 如果 getUpdates 返回空，先给 bot 发一条消息；如果设置了 webhook，先访问 https://api.telegram.org/bot<TOKEN>/deleteWebhook。
 
+🚀 使用方法
+在 OpenWrt 上保存脚本（可以直接 vi 或者从电脑 scp 过去）：
+
+sh
+vi /root/openwrt-traffic-install.sh
+# 粘贴上面的全部内容，:wq 保存
+chmod +x /root/openwrt-traffic-install.sh
+执行安装（替换成你自己的新 Token）：
+
+sh
+sh /root/openwrt-traffic-install.sh --token '你的新TOKEN' --chat-id '2035264761' --name 'FeiMaoU20'
+如果网卡探测不对，加上 --iface 参数手动指定，例如：
+
+sh
+sh /root/openwrt-traffic-install.sh --token '...' --chat-id '...' --name 'FeiMaoU20' --iface 'eth0'
+你可以先看看有哪些网卡：
+
+sh
+ls /sys/class/net/
+ip route show default
+不想立即发测试消息，加 --skip-test。
+
 二、一键安装
 SSH 登录你的 VPS，用 root 执行：
 
